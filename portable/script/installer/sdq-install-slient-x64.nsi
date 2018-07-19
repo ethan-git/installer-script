@@ -28,5 +28,7 @@ ExecWait "sdq-postgresql-setup.exe $PROGRAMFILES64"
 CreateShortCut "$DESKTOP\SDQ Server.lnk" "$PROGRAMFILES64\SDQ\SDQ.exe" "" "$INSTDIR\sdq.ico"
 CreateShortCut "$DESKTOP\SDQ.lnk" "http://localhost:18080/sdq" "" "$INSTDIR\sdq.ico"
 
+MessageBox MB_OK "Completed."
+
 false:
 SectionEnd
